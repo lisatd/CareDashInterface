@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CustomMaterialModule } from './modules/custom-material.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     FlexLayoutModule,
     CustomMaterialModule
   ],

@@ -1,21 +1,42 @@
-<cd-navbar></cd-navbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav fxLayout="column" class="sidenav-menu">
+    <strong>Menu 1</strong>
+    <button mat-button>Menu Item #1</button>
+    <button mat-button>Menu Item #2</button>
+    <button mat-button>Menu Item #3</button>
 
-<div class="container">
-  <div fxLayout="row" fxLayoutGap="15px">
-    <mat-card class="content" fxFlex="70">
-      content
-    </mat-card>
-  
-    <cd-sign-up fxFlex></cd-sign-up>
-  </div>
+    <strong>Menu 2</strong>
+    <button mat-button>Menu Item #1</button>
+    <button mat-button>Menu Item #2</button>
+    <button mat-button>Menu Item #3</button>
 
-  <h2 class="center-text">Reasons to Sign Up as a Provider on CareDash</h2>
+    <strong>Menu 3</strong>
+    <button mat-button>Menu Item #1</button>
+    <button mat-button>Menu Item #2</button>
+    <button mat-button>Menu Item #3</button>
+  </mat-sidenav>
 
-  <div fxLayout="row" fxLayoutGap="50px">
-    <cd-headline fxFlex></cd-headline>
-    <cd-headline fxFlex></cd-headline>
-    <cd-headline fxFlex></cd-headline>
-  </div>
-</div>
-
-<cd-footer></cd-footer>
+  <mat-sidenav-content>
+    <cd-navbar [sideNav]="sidenav"></cd-navbar>
+    
+    <div class="container">
+      <div fxLayout="row" fxLayoutGap="15px" fxLayout.lt-md="column">
+        <mat-card class="content" fxFlex="70">
+          
+        </mat-card>
+      
+        <cd-sign-up fxFlex></cd-sign-up>
+      </div>
+    
+      <h2 class="center-text">Reasons to Sign Up as a Provider on CareDash</h2>
+    
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column">
+        <cd-headline fxFlex></cd-headline>
+        <cd-headline fxFlex></cd-headline>
+        <cd-headline fxFlex></cd-headline>
+      </div>
+    </div>
+    
+    <cd-footer></cd-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
