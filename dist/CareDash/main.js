@@ -156,7 +156,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#footer {\r\n    margin-top: 100px;\r\n    padding: 20px 100px;\r\n    background-color: #fff;\r\n}\r\n\r\n#footer ul {\r\n    list-style-type: none;\r\n    margin-left: -35px;\r\n}\r\n\r\n.copyright {\r\n    margin-top: 25px;\r\n    font-size: 12px;\r\n}"
 
 /***/ }),
 
@@ -167,7 +167,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  footer works!\r\n</p>\r\n"
+module.exports = "<div id=\"footer\">\r\n\r\n  <div fxLayout=\"row\">\r\n\r\n    <div fxFlex=\"20\">\r\n      <strong>CareDash</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Home</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">About</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Contact</a></li>\r\n        <li>\r\n          <a href=\"#\">Write a Review</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex=\"20\">\r\n      <strong>Specialists</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Primary Care Physicians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Pediatricians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Optometrists</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Dentists</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex>\r\n      <strong>Follow Us</strong>\r\n      <div fxLayoutGap=\"10px\" style=\"padding-top: 1em;\">\r\n        <button mat-mini-fab color=\"primary\">F</button>\r\n        <button mat-mini-fab color=\"primary\">T</button>\r\n        <button mat-mini-fab color=\"primary\">I</button>\r\n        <button mat-mini-fab color=\"primary\">P</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"copyright\">\r\n    (c) Copyright 2018 CareDash\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -282,7 +282,7 @@ var HeadlineComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#header-toolbar mat-menu {\r\n    margin-right: 15px;\r\n}\r\n\r\n.logo {\r\n    margin-right: 15px;\r\n}"
+module.exports = "#header-toolbar mat-menu {\r\n    margin-right: 15px;\r\n}\r\n\r\n.logo {\r\n    width: 150px;\r\n    text-align: center;\r\n}"
 
 /***/ }),
 
