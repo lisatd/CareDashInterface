@@ -233,7 +233,7 @@ module.exports = "div.headline-img {\r\n    width: 200px;\r\n    height: 120px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"headline\">\r\n  <div class=\"headline-img\"></div>\r\n  \r\n  <h3>Headline</h3>\r\n</div>\r\n\r\n<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue elementum dui id euismod. Duis tortor lorem,\r\neuismod sed dapibus sed, finibus at lacus. Curabitur venenatis consequat interdum. Etiam neque lacus, rutrum non\r\nlaoreet a, gravida vitae justo. Vivamus ultricies felis at sem laoreet, condimentum fermentum augue ornare.</div>"
+module.exports = "<div class=\"headline\">\r\n  <div class=\"headline-img\"></div>\r\n  \r\n  <h3>Headline</h3>\r\n</div>\r\n\r\n<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue elementum dui id euismod. Duis tortor lorem,\r\neuismod sed dapibus sed, finibus at lacus. Curabitur venenatis consequat interdum. Etiam neque lacus, rutrum non\r\nlaoreet a, gravida vitae justo. Vivamus ultricies felis at sem laoreet, condimentum fermentum augue ornare.</div>\r\n\r\n<button mat-raised-button style=\"margin-top: 10px;\">Learn More</button>"
 
 /***/ }),
 
