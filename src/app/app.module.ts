@@ -8,12 +8,16 @@ import { CustomMaterialModule } from './modules/custom-material.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { HeadlineComponent } from './components/headline/headline.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SignUpComponent
+    SignUpComponent,
+    HeadlineComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
