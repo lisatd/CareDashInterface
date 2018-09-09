@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\r\n    width: 75%;\r\n    margin: 20px auto 0 auto;\r\n}"
+module.exports = ".container {\r\n    margin: 20px auto 0 auto;\r\n}\r\n\r\n.content {\r\n    min-height: 300px;\r\n}\r\n\r\n.sidenav-menu {\r\n    padding: 20px 10px;\r\n}\r\n\r\n.sidenav-menu strong {\r\n    margin-top: 20px;\r\n}\r\n\r\n@media only screen  and (min-width : 1224px) {\r\n    .container {\r\n        width: 75%;\r\n    }\r\n}"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ".container {\r\n    width: 75%;\r\n    margin: 20px auto 0 aut
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<cd-navbar></cd-navbar>\r\n\r\n<div class=\"container\">\r\n  <div fxLayout=\"row\" fxLayoutGap=\"15px\">\r\n    <mat-card class=\"content\" fxFlex=\"70\">\r\n      content\r\n    </mat-card>\r\n  \r\n    <cd-sign-up fxFlex></cd-sign-up>\r\n  </div>\r\n\r\n  <h2 class=\"center-text\">Reasons to Sign Up as a Provider on CareDash</h2>\r\n\r\n  <div fxLayout=\"row\" fxLayoutGap=\"50px\">\r\n    <cd-headline fxFlex></cd-headline>\r\n    <cd-headline fxFlex></cd-headline>\r\n    <cd-headline fxFlex></cd-headline>\r\n  </div>\r\n</div>\r\n\r\n<cd-footer></cd-footer>"
+module.exports = "<mat-sidenav-container>\r\n  <mat-sidenav #sidenav fxLayout=\"column\" class=\"sidenav-menu\">\r\n    <strong>Menu 1</strong>\r\n    <button mat-button>Menu Item #1</button>\r\n    <button mat-button>Menu Item #2</button>\r\n    <button mat-button>Menu Item #3</button>\r\n\r\n    <strong>Menu 2</strong>\r\n    <button mat-button>Menu Item #1</button>\r\n    <button mat-button>Menu Item #2</button>\r\n    <button mat-button>Menu Item #3</button>\r\n\r\n    <strong>Menu 3</strong>\r\n    <button mat-button>Menu Item #1</button>\r\n    <button mat-button>Menu Item #2</button>\r\n    <button mat-button>Menu Item #3</button>\r\n  </mat-sidenav>\r\n\r\n  <mat-sidenav-content>\r\n    <cd-navbar [sideNav]=\"sidenav\"></cd-navbar>\r\n    \r\n    <div class=\"container\">\r\n      <div fxLayout=\"row\" fxLayoutGap=\"15px\" fxLayout.lt-md=\"column\">\r\n        <mat-card class=\"content\" fxFlex=\"70\">\r\n          \r\n        </mat-card>\r\n      \r\n        <cd-sign-up fxFlex></cd-sign-up>\r\n      </div>\r\n    \r\n      <h2 class=\"center-text\">Reasons to Sign Up as a Provider on CareDash</h2>\r\n    \r\n      <div fxLayout=\"row\" fxLayoutGap=\"50px\" fxLayout.lt-md=\"column\">\r\n        <cd-headline fxFlex></cd-headline>\r\n        <cd-headline fxFlex></cd-headline>\r\n        <cd-headline fxFlex></cd-headline>\r\n      </div>\r\n    </div>\r\n    \r\n    <cd-footer></cd-footer>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -96,12 +96,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var _modules_custom_material_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/custom-material.module */ "./src/app/modules/custom-material.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/navbar/navbar.component */ "./src/app/components/navbar/navbar.component.ts");
-/* harmony import */ var _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/sign-up/sign-up.component */ "./src/app/components/sign-up/sign-up.component.ts");
-/* harmony import */ var _components_headline_headline_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/headline/headline.component */ "./src/app/components/headline/headline.component.ts");
-/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _modules_custom_material_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/custom-material.module */ "./src/app/modules/custom-material.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/navbar/navbar.component */ "./src/app/components/navbar/navbar.component.ts");
+/* harmony import */ var _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/sign-up/sign-up.component */ "./src/app/components/sign-up/sign-up.component.ts");
+/* harmony import */ var _components_headline_headline_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/headline/headline.component */ "./src/app/components/headline/headline.component.ts");
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,27 +120,29 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-                _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"],
-                _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_8__["SignUpComponent"],
-                _components_headline_headline_component__WEBPACK_IMPORTED_MODULE_9__["HeadlineComponent"],
-                _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_8__["NavbarComponent"],
+                _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_9__["SignUpComponent"],
+                _components_headline_headline_component__WEBPACK_IMPORTED_MODULE_10__["HeadlineComponent"],
+                _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
                 _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["FlexLayoutModule"],
-                _modules_custom_material_module__WEBPACK_IMPORTED_MODULE_5__["CustomMaterialModule"]
+                _modules_custom_material_module__WEBPACK_IMPORTED_MODULE_6__["CustomMaterialModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -156,7 +159,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#footer {\r\n    margin-top: 100px;\r\n    padding: 20px 100px;\r\n    background-color: #fff;\r\n}\r\n\r\n#footer ul {\r\n    list-style-type: none;\r\n    margin-left: -35px;\r\n}\r\n\r\n.copyright {\r\n    margin-top: 25px;\r\n    font-size: 12px;\r\n}"
+module.exports = "#footer {\r\n    margin-top: 100px;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    background-color: #fff;\r\n}\r\n\r\n#footer ul {\r\n    list-style-type: none;\r\n    margin-left: -35px;\r\n}\r\n\r\n.copyright {\r\n    margin-top: 25px;\r\n    font-size: 12px;\r\n}\r\n\r\n@media only screen  and (min-width : 1224px) {\r\n    #footer {\r\n        padding-left: 100px;\r\n        padding-right: 100px;\r\n    }\r\n}\r\n\r\n@media only screen  and (max-width : 1224px) {\r\n    #footer {\r\n        padding-left: 10px;\r\n        padding-right: 10px;\r\n    }\r\n}"
 
 /***/ }),
 
@@ -167,7 +170,7 @@ module.exports = "#footer {\r\n    margin-top: 100px;\r\n    padding: 20px 100px
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"footer\">\r\n\r\n  <div fxLayout=\"row\">\r\n\r\n    <div fxFlex=\"20\">\r\n      <strong>CareDash</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Home</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">About</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Contact</a></li>\r\n        <li>\r\n          <a href=\"#\">Write a Review</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex=\"20\">\r\n      <strong>Specialists</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Primary Care Physicians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Pediatricians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Optometrists</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Dentists</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex>\r\n      <strong>Follow Us</strong>\r\n      <div fxLayoutGap=\"10px\" style=\"padding-top: 1em;\">\r\n        <button mat-mini-fab color=\"primary\">F</button>\r\n        <button mat-mini-fab color=\"primary\">T</button>\r\n        <button mat-mini-fab color=\"primary\">I</button>\r\n        <button mat-mini-fab color=\"primary\">P</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"copyright\">\r\n    (c) Copyright 2018 CareDash\r\n  </div>\r\n</div>"
+module.exports = "<div id=\"footer\">\r\n\r\n  <div fxLayout=\"row\" fxLayout.lt-md=\"column\">\r\n\r\n    <div fxFlex.gt-sm=\"20\">\r\n      <strong>CareDash</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Home</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">About</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Contact</a></li>\r\n        <li>\r\n          <a href=\"#\">Write a Review</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex.gt-sm=\"20\">\r\n      <strong>Specialists</strong>\r\n      <ul>\r\n        <li>\r\n          <a href=\"#\">Primary Care Physicians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Pediatricians</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Optometrists</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"#\">Dentists</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  \r\n    <div fxFlex.gt-sm>\r\n      <strong>Follow Us</strong>\r\n      <div fxLayoutGap=\"10px\" style=\"padding-top: 1em;\">\r\n        <button mat-mini-fab color=\"primary\">F</button>\r\n        <button mat-mini-fab color=\"primary\">T</button>\r\n        <button mat-mini-fab color=\"primary\">I</button>\r\n        <button mat-mini-fab color=\"primary\">P</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"copyright\">\r\n    (c) Copyright 2018 CareDash\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -282,7 +285,7 @@ var HeadlineComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#header-toolbar mat-menu {\r\n    margin-right: 15px;\r\n}\r\n\r\n.logo {\r\n    width: 150px;\r\n    text-align: center;\r\n}"
+module.exports = "#header-toolbar mat-menu {\r\n    margin-right: 15px;\r\n}"
 
 /***/ }),
 
@@ -293,7 +296,7 @@ module.exports = "#header-toolbar mat-menu {\r\n    margin-right: 15px;\r\n}\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\" id=\"header-toolbar\">\r\n  <span class=\"logo\">Logo</span>\r\n  <button mat-button [matMenuTriggerFor]=\"menu\">Menu 1</button>\r\n  <mat-menu #menu=\"matMenu\" [overlapTrigger]=\"false\">\r\n    <button mat-menu-item>Menu Item #1</button>\r\n    <button mat-menu-item>Menu Item #2</button>\r\n    <button mat-menu-item>Menu Item #3</button>\r\n  </mat-menu>\r\n  <button mat-button [matMenuTriggerFor]=\"menu\">Menu 2</button>\r\n  <mat-menu #menu=\"matMenu\" [overlapTrigger]=\"false\">\r\n    <button mat-menu-item>Menu Item #1</button>\r\n    <button mat-menu-item>Menu Item #2</button>\r\n    <button mat-menu-item>Menu Item #3</button>\r\n  </mat-menu>\r\n  <button mat-button [matMenuTriggerFor]=\"menu\">Menu 3</button>\r\n  <mat-menu #menu=\"matMenu\" [overlapTrigger]=\"false\">\r\n    <button mat-menu-item>Menu Item #1</button>\r\n    <button mat-menu-item>Menu Item #2</button>\r\n    <button mat-menu-item>Menu Item #3</button>\r\n  </mat-menu>\r\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\" id=\"header-toolbar\">\r\n  <div fxHide fxShow.lt-md>\r\n    <button mat-icon-button (click)=\"sideNav.toggle()\">\r\n      <mat-icon svgIcon=\"hamburg\"></mat-icon>\r\n    </button>\r\n  </div>\r\n\r\n  <span class=\"logo\">Logo</span>\r\n\r\n  <div fxHide fxShow.gt-sm>\r\n    <button mat-button [matMenuTriggerFor]=\"menu1\">Menu 1</button>\r\n    <mat-menu #menu1=\"matMenu\" [overlapTrigger]=\"false\">\r\n      <button mat-menu-item>Menu Item #1</button>\r\n      <button mat-menu-item>Menu Item #2</button>\r\n      <button mat-menu-item>Menu Item #3</button>\r\n    </mat-menu>\r\n    <button mat-button [matMenuTriggerFor]=\"menu2\">Menu 2</button>\r\n    <mat-menu #menu2=\"matMenu\" [overlapTrigger]=\"false\">\r\n      <button mat-menu-item>Menu Item #1</button>\r\n      <button mat-menu-item>Menu Item #2</button>\r\n      <button mat-menu-item>Menu Item #3</button>\r\n    </mat-menu>\r\n    <button mat-button [matMenuTriggerFor]=\"menu3\">Menu 3</button>\r\n    <mat-menu #menu3=\"matMenu\" [overlapTrigger]=\"false\">\r\n      <button mat-menu-item>Menu Item #1</button>\r\n      <button mat-menu-item>Menu Item #2</button>\r\n      <button mat-menu-item>Menu Item #3</button>\r\n    </mat-menu>\r\n  </div>\r\n\r\n</mat-toolbar>"
 
 /***/ }),
 
@@ -308,6 +311,8 @@ module.exports = "<mat-toolbar color=\"primary\" id=\"header-toolbar\">\r\n  <sp
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -318,18 +323,28 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var NavbarComponent = /** @class */ (function () {
-    function NavbarComponent() {
+    function NavbarComponent(matIconRegistry, domSanitizer) {
+        this.matIconRegistry = matIconRegistry;
+        this.domSanitizer = domSanitizer;
     }
     NavbarComponent.prototype.ngOnInit = function () {
+        this.matIconRegistry.addSvgIcon('hamburg', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/baseline-menu.svg'));
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], NavbarComponent.prototype, "sideNav", void 0);
     NavbarComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'cd-navbar',
             template: __webpack_require__(/*! ./navbar.component.html */ "./src/app/components/navbar/navbar.component.html"),
             styles: [__webpack_require__(/*! ./navbar.component.css */ "./src/app/components/navbar/navbar.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_material_icon__WEBPACK_IMPORTED_MODULE_1__["MatIconRegistry"],
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
     ], NavbarComponent);
     return NavbarComponent;
 }());
@@ -417,12 +432,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
 /* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -439,14 +458,18 @@ var CustomMaterialModule = /** @class */ (function () {
                 _angular_material_menu__WEBPACK_IMPORTED_MODULE_2__["MatMenuModule"],
                 _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
                 _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"]
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"],
+                _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
+                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"]
             ],
             exports: [
                 _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbarModule"],
                 _angular_material_menu__WEBPACK_IMPORTED_MODULE_2__["MatMenuModule"],
                 _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
                 _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"]
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"],
+                _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
+                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"]
             ]
         })
     ], CustomMaterialModule);
